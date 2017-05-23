@@ -113,6 +113,8 @@ table tbody tr td.hour span {
 }
 
 input {
-  background: #c8cdd4;
+  background: #fff;
   border: none;
+  width: 120px;
+  height: 30px;
 }
