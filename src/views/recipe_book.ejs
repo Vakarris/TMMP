@@ -1,0 +1,23 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <%- include('partials/head'); %>
+  </head>
+  <body>
+    <nav>
+      <%- include('partials/nav'); %>
+    </nav>
+    <div class="bodyText">
+      <h1>Recipe Book</h1>
+      <p>Browse a list of all your saved recipes here.</p>
+      <table>
+          <% for(i=0; i<recipe_list.length; i++) { %>
+              <tr>
+                  <td><a href="/recipe_book/<%= recipe_list[i]._id %>"> <%= recipe_list[i].name %> </a></td>
+                  <td>(<%= recipe_list[i].author %>)</td>
+              </tr>
+          <% } %>
+      </table>
+    </div>
+  </body>
+</html>

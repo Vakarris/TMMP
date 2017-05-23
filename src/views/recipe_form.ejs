@@ -1,0 +1,93 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <%- include('partials/head'); %>
+    <link rel="stylesheet" href="/css/form_styles.css">
+  </head>
+  <body>
+    <nav>
+      <%- include('partials/nav'); %>
+    </nav>
+
+    <div class="bodyText">
+        <h1>
+            <!-- Edit/Add Recipe - Dynamic Header -->
+            DYNAMIC HEADER HERE
+        </h1>
+        <form method="POST" action="/recipe_form">
+            <div class="formGroup">
+              <div class="label">
+                Recipe Name:
+              </div>
+              <input class="inputElement" type="text" name="name">
+            </div>
+
+            <div class="formGroup">
+              <div class="label">
+                Author Name:
+              </div>
+              <input class="inputElement" type="text" name="author">
+            </div>
+            
+            <!-- category here -->
+
+            <div class="formGroup">
+              <div class="label">
+                Picture URL:
+              </div>
+              <input class="inputElement" type="text" name="picture">
+            </div>
+
+            <div class="formGroup">
+              <div class="label">
+                Prep Time:
+              </div>
+              <input class="nums" placeholder="Hrs" type="text" name="prepHours">
+              <input class="nums" placeholder="Mins" type="text" name="prepMin">
+            </div>
+
+            <div class="formGroup">
+              <div class="label">
+                Cook Time:
+              </div>
+              <input class="nums" placeholder="Hrs" type="text" name="cookHours">
+              <input class="nums" placeholder="Mins" type="text" name="cookMin">
+            </div>
+
+            <div class="formGroup">
+              <div class="label">
+                Ingredients:
+              </div>
+              <input class ="nums" placeholder="#" type="text" name="amount">
+              <input id="unit" placeholder="Unit" type="text" name="unit">
+              <input id="ing" placeholder="Ingredient" type="text" name="ingredient">
+              <input class="inputElement" placeholder="Preparation" type="text" name="preparation">
+              <input class="button" id="addIng" type='button' value='+'>
+              <table>
+                <tr>
+                  <td>
+                    <!-- iterate over an array containing added ingredients in order to display current direction steps -->
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="formGroup">
+              <div class="label">
+                Directions:
+              </div>
+              <div class="explaination">
+                (Enter each step in the directions or, if you don't want to view it as seperate steps, enter the entirety of the directions.)
+              </div>
+              <input id="directions" type="text" name="directions">
+              <input class="button" id="addStep" type='button' value='+'>
+              <!-- list of added steps in the directions here -->
+            </div>
+            <input class="button" id="submit" type="submit" value="Submit">
+            <!-- if there's text still in one of the dynamic inputs, put up a warning asking if they want to continue on to the next page and possibly lose that information -->
+        </form>
+    </div>
+    <!-- links in javascript for dynamic lists -->
+    <script src="/js/form_buttons.js"></script> 
+  </body>
+</html>

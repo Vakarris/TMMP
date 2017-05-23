@@ -1,0 +1,50 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 100vw;
+    height: 9vh;
+    background-color: dodgerblue;
+    color: white;
+    padding-top: 25px;
+    padding-left: 25px;
+    font-size: 1em;
+    margin-bottom: 40px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding-right: 25px;
+}
+
+#logo {
+    padding-right: 35px;
+    font-size: 1.4em;
+}
+
+.bodyText {
+    padding: 0px 135px;
+    min-height: 35vh;
+    font-size: 18px;
+}
+
+.centered {
+    text-align: center;
+}
+
+#pic {
+    margin-bottom: 20px;
+}
+
+#times {
+    color: grey;
+}
+
+#source {
+    text-align: center;
+    color: grey;
+}

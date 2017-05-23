@@ -1,0 +1,56 @@
+.formGroup {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.explaination {
+    font-size: 15px;
+}
+
+.label {
+    display: inline-block;
+    width: 150px;
+}
+
+#directions {
+    width: 800px;
+}
+
+.nums {
+    width: 50px;
+}
+
+#unit {
+    width: 100px;
+}
+
+#ing {
+    width: 200px;
+}
+
+.inputElement {
+    width: 350px;
+}
+
+input {
+    border-radius: 4px;
+    padding-left: 5px;
+    border: 1px solid darkgray;
+    height: 23px;
+}
+
+.button {
+    border-radius: 4px;
+    border: 0px;
+    background-color: #004DC3;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    height: 25px;
+}
+
+#submit {
+    font-size: 18px;
+    height: 30px;
+    padding: 0px 20px;
+}
